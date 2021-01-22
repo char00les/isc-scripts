@@ -1,4 +1,5 @@
 #!/bin/bash
+#conf_location=/etc/yum.repos.d
 
 yum list updates
 
