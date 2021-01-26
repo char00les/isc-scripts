@@ -1,0 +1,10 @@
+#!/bin/bash
+#Author: char00les
+#Date: 09-01-2020
+#
+#Purpose: Delete old files that are year old via cron
+#Test: find /folders/misc/*/*/yearly/ -mtime +366 -type f
+
+
+echo "Search and delete files that are a year old"
+/bin/find /folders/misc/*/*/yearly/ -mtime +366 -type f -exec /bin/rm -fv {} \;
