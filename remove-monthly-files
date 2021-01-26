@@ -1,0 +1,9 @@
+#!/bin/bash
+#Author: char00les
+#Date: 09-01-2020
+#
+#Purpose: Delete old files that are month old via cron
+#Test: find /folder/misc/*/*/monthly/ -mtime +31 -type f
+
+echo "Search and delete files that are a month old"
+/bin/find /folder/misc/*/*/monthly/ -mtime +31 -type f -exec /bin/rm -fv {} \;
