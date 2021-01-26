@@ -1,0 +1,9 @@
+#!/bin/bash
+#Author: char00les
+#Date: 09-01-2020
+#
+#Purpose: Delete old files that are week old
+#Test: find /folder/misc/*/*/weekly/ -mtime +8 -type f ;
+
+echo "Search and delete files that are a week old"
+/bin/find /folder/misc/*/*/weekly/ -mtime +8 -type f -exec /bin/rm -fv {} \;
